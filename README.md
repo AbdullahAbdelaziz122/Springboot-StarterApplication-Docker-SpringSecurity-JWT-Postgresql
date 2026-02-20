@@ -2,6 +2,9 @@
 
 A robust and production-ready **Spring Boot 3+** starter template designed to accelerate your development process. This project comes pre-configured with **PostgreSQL**, **JWT Authentication**, **Dockerization**, and **OpenAPI (Swagger)** documentation.
 
+## Swagger UI
+![Swagger-UI](./swagger-UI.png)
+
 ## Features
 
 - **Spring Boot 3.4.2**: The latest stable version of Spring Boot.
@@ -103,8 +106,7 @@ src/main/java/com/starter/template/starter/
 | `JWT_EXPIRATION` | `86400000` (24h) | JWT validity period in ms |
 
 ---
-## Swagger UI
-[Swagger-UI](./swagger-UI.png)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
