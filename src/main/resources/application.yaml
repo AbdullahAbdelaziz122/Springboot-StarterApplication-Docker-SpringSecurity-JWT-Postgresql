@@ -1,23 +1,22 @@
 server:
   port: 8080
 
-
 spring:
   application:
     name: template-backend
 
   # Datasource Configuration (PostgreSQL)
   datasource:
-    url: jdbc:postgresql://localhost:5430/shoppingdb
-    username: postgres
-    password: postgres
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/template}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:postgres}
     driver-class-name: org.postgresql.Driver
-    
+
   # JPA / Hibernate Configuration
   jpa:
     hibernate:
-      ddl-auto: create-drop        
-    show-sql: true                  
+      ddl-auto: update
+    show-sql: true
     properties:
       hibernate:
         format_sql: true
@@ -25,19 +24,17 @@ spring:
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
-  
-
 # JWT Configuration
 jwt:
-  secret: mySecretKeyWithAtLeast32CharactersLongForHS256Algorithm
-  expiration: 86400000
+  secret: ${JWT_SECRET:mySecretKeyWithAtLeast32CharactersLongForHS256Algorithm}
+  expiration: ${JWT_EXPIRATION:86400000}
+
 # Logging
 logging:
   level:
-    org.springframework.security: DEBUG   # Set to INFO in production
-    com.abdullah.ShoppingCart: DEBUG
+    org.springframework.security: INFO
+    com.starter.template: DEBUG
     org.hibernate.SQL: DEBUG
-    org.hibernate.type.descriptor.sql.BasicBinder: TRACE   # Logs SQL parameters
 
 # Actuator Endpoints (optional)
 management:
