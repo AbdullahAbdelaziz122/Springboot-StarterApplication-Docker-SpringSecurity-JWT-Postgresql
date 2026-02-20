@@ -103,7 +103,8 @@ src/main/java/com/starter/template/starter/
 | `JWT_EXPIRATION` | `86400000` (24h) | JWT validity period in ms |
 
 ---
-
+## Swagger UI
+[Swagger-UI](./swagger-UI.png)
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
