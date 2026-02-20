@@ -56,6 +56,10 @@ public class SecurityUser implements UserDetails {
         return true;
     }
 
+    public Object getId() {
+        return user.getId();
+    }
+
  
 
 }
