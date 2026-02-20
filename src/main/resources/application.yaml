@@ -8,7 +8,7 @@ spring:
 
   # Datasource Configuration (PostgreSQL)
   datasource:
-    url: jdbc:postgresql://localhost:5430/template
+    url: jdbc:postgresql://localhost:5430/shoppingdb
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
