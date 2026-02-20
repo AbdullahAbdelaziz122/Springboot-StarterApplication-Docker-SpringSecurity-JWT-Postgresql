@@ -1,6 +1,6 @@
 # Spring Boot Starter Backend
 
-A robust and production-ready **Spring Boot 3+** starter template designed to accelerate your development process. This project comes pre-configured with **PostgreSQL**, **JWT Authentication**, **Dockerization**, and **OpenAPI (Swagger)** documentation.
+A robust and production-ready **Spring Boot 4+** starter template designed to accelerate your development process. This project comes pre-configured with **PostgreSQL**, **JWT Authentication**, **Dockerization**, and **OpenAPI (Swagger)** documentation.
 
 ## Swagger UI
 ![Swagger-UI](./swagger-UI.png)
